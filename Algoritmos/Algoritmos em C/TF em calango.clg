@@ -1,0 +1,303 @@
+/// João Victor Bueno Carneiro uc19106154 Trabalho final professor Wesley
+algoritmo TF;
+// Síntese
+//  Objetivo: Construir um sistema de vendas de ingressos de cinema, informando a quantidade de vendas confirmadas, opção de cancelamento, quantidade de poltronas
+// quantidade de poltronas disponíveis e poltronas ocupadas, opção de meia entrada, nome do filme, valor do ingresso.
+//  Entrada : Um texto, 5 caracteres, 3 valores inteiros, um valor real.
+//  Saída   : Informar a cadeira reservada, opção de cancelamento de reserva, total de vendas confirmadas, nome do filme, quantidade de cadeiras, valor do ingresso, opção de meia entrada
+
+
+principal
+	// Declarações
+
+	// Instruções
+	texto nome;
+	caracter resposta, categoria, continuar, opcao, pause;
+	inteiro poltronas, idade, indice, quantidade, quantidade2, cadeiras[499], indice2, indice3, aux;
+	real ingresso, confirmaIngresso;
+	real somaValor;
+	inteiro somaQuantidade, somaOcupados, remover, flag, flag2, contador, diminuiValor;
+	diminuiValor = 0;
+	flag2 = 0;
+	limpaTela();
+	nome = leValidaFilme();
+	limpaTela();
+	escreval (" Nome do filme: ", nome);
+	poltronas = leValidaQuantidadeCadeiras();
+	ingresso = leValidaValor();
+	limpaTela();
+	somaValor = 0;
+	escreval (" Filme: ", nome);
+	escreval (" Quantidade de cadeiras na sala: ", poltronas, " poltronas. ");
+	escreval (" Valor do Ingresso a ser pago: R$ ", ingresso);
+	limpaTela();
+	somaQuantidade = 0;
+	indice = 0;
+	confirmaIngresso = ingresso;
+	faca
+		escreval(" Informe uma das opcoes a baixo: ");
+		escreval(" R - Fazer a reserva ");
+		escreval(" C - Vendas Confirmadas ");
+		escreval(" D - Cadeiras Disponiveis ");
+		escreval(" R: ");
+		faca
+			leiaCaracter (opcao);
+			opcao = maiusculoCaracter(opcao);
+			ingresso = confirmaIngresso;
+			escolha (opcao)////// Escolha
+			caso 'R'
+				limpaTela();
+				escreval (" Faca sua reserva!");
+				somaQuantidade = somaQuantidade + 1;
+				escreval (" Numero da reserva: ", somaQuantidade);
+				idade = leValidaIdade();
+				ingresso = mostraIngresso(idade, resposta, categoria, ingresso);
+				diminuiValor = ingresso;
+				escreval (" Filme: ", nome);
+				escreval (" Quantidade de cadeiras na sala: ", poltronas);
+				escreval (" Valor do Ingresso a ser pago: R$", ingresso);
+				escreval (" Idade do pagante: ", idade, " anos ");
+				faca
+					se (flag2 == 0)entao  /// O flag2 sera sempre 0 enquanto nenhum usuario cancelar a sua reserva
+						somaValor = somaValor + ingresso;
+						cadeiras[indice] = leValidaCadeiras(cadeiras, indice);
+						indice = indice + 1;
+						quantidade = indice;
+						quantidade2 = indice;
+					fimSe
+					se (flag2 == 1)entao /// O flag2 sera 1 somente quando houver cancelamento de reserva, o vetor = 0 sera substituido por uma nova reserva
+						para (contador de 0  ate poltronas passo 1)faca
+							se (cadeiras[contador] == 0)entao
+								cadeiras[contador] = leValidaCadeiras(cadeiras, indice);
+								flag2=0;
+								interrompa;
+							fimSe
+						fimPara
+					fimSe
+					escreval (" Precione a tecla enter para continuar... ");
+					leiaCaracter(pause);
+				enquanto (indice < poltronas e pause == 'z');
+				limpaTela();
+				interrompa;
+			caso 'C'
+				faca
+					para(indice2 de 0 ate quantidade - 1 passo 1)faca /// Organizar na ordem as cadeiras
+						para (indice3 de indice2+1 ate quantidade - 2 passo 1)faca
+							se(cadeiras[indice2]>cadeiras[indice3])entao
+								aux = cadeiras[indice2];
+								cadeiras[indice2] = cadeiras[indice3];
+								cadeiras[indice3] = aux;
+							fimSe
+						fimPara
+					fimPara
+					limpaTela();
+					escreval (" CADEIRAS RESERVADAS! ");
+					quantidade = indice;
+					indice = 0;
+					para (indice de 0 ate quantidade2-1 passo 1)faca
+						escreval (" Cadeira: ", cadeiras[indice]);
+					fimPara
+					calculaIngresso(somaValor); /// Informando o valor somado das vendas (excluindo as canceladas)
+					flag = 0;
+					escreval (" Pressione 'N' para cancelar a reserva ou outra tecla para continuar. ");
+					escreval(" R: ");
+					leiaCaracter(resposta);
+					resposta = maiusculoCaracter(resposta);
+					se (resposta == 'N')entao
+						flag2= 0;
+						diminuiValor = 0;
+						escreval (" Informe a cadeira que deseja cancelar a reserva: ");
+						leia (remover);
+						limpaTela();
+						indice = 0;
+						para (indice de 0 ate quantidade-1 passo 1)faca
+							se (remover == cadeiras[indice])entao
+								escreval ("\nCadeira: ", cadeiras[indice], " cancelada. ");
+								flag = 1;
+								flag2 = 1;
+							fimSe
+						fimPara
+
+						se (flag==0)entao
+							escreval (" Cadeira nao encontrada. ");
+						fimSe
+						se (flag==1)entao
+							para (contador de 0 ate quantidade-1 passo 1)faca
+								se (cadeiras[contador] == remover)entao
+									cadeiras[contador] = 0;
+									somaQuantidade = somaQuantidade - 1;
+									somaValor = somaValor - diminuiValor;
+								fimSe
+							fimPara
+						fimSe
+					fimSe
+					escreval (" Precione a tecla enter para continuar... ");
+					leiaCaracter(pause);
+				enquanto (pause == 'z');
+				limpaTela();
+				interrompa;
+			caso 'D'
+				limpaTela();
+				somaOcupados = poltronas - quantidade;
+				faca
+					escreval (" Numero de cadeiras disponiveis: ", somaOcupados);
+					indice = 0;
+					escreval (" Cadeiras indisponiveis! ");
+					para (indice de 0 ate somaOcupados-1 passo 1)faca
+						escreval (" Cadeira: ", indice+1);
+					fimPara
+					escreval (" CADEIRAS RESERVADAS! ");
+					para (indice de 0 ate quantidade-1 passo 1)faca
+						escreval (" Cadeira: ", cadeiras[indice]);
+					fimPara
+					escreval (" Precione a tecla enter para continuar... ");
+					leiaCaracter(pause);
+				enquanto (pause == 'z');
+				limpaTela();
+				interrompa;
+			fimEscolha
+			se (opcao != 'D' e opcao != 'R' e opcao != 'C')entao
+				escreval (" Caracter invalido. Tente novamente...");
+			fimSe
+		enquanto (opcao != 'D' e opcao != 'R' e opcao != 'C');
+
+	enquanto (indice < poltronas );/// até esgotar a sala
+fimPrincipal
+
+/// Nome do filme
+funcao texto leValidaFilme()
+	texto nome;
+	faca
+		escreval (" Informe o nome do filme: ");
+		leia (nome);
+		se(comparaTexto(nome, "")==0)entao
+			escreval (" O nome do filme e obrigatorio. Tente Novamente...");
+		fimSe
+	enquanto (comparaTexto(nome, "")==0);
+	retorna nome;
+fimFuncao
+//Quantidade de poltronas//////
+funcao inteiro leValidaQuantidadeCadeiras()
+	inteiro quantidade;
+	faca
+		escreval(" Informe a quantidade de poltronas disponivel na sala: ");
+		leia (quantidade);
+		se (quantidade < 100 ou quantidade > 499)entao
+			escreval ("  A capacidade da sala e de 100 e 499 poltronas. Tente novamente...");
+		fimSe
+	enquanto (quantidade < 100 ou quantidade > 499);
+	retorna quantidade;
+fimFuncao
+/// Validando o valor
+funcao real leValidaValor ()
+	real valor;
+	faca
+		escreval (" Informe o valor do ingresso: ");
+		leia (valor);
+		se (valor < 0)entao
+			escreval (" O valor do Ingresso não pode ser negativo.");
+		fimSe
+	enquanto (valor < 0);
+	retorna valor;
+fimFuncao
+/// Validando a idade
+funcao inteiro leValidaIdade()
+	inteiro idade;
+	faca
+		escreval (" Informe a idade: ");
+		leia (idade);
+		se (idade < 0)entao
+			escreval (" A idade não pode ser negativa. Tente Novamente...");
+		fimSe
+	enquanto (idade < 0);
+	retorna idade;
+fimFuncao
+//Valor do ingresso/////
+funcao real mostraIngresso(inteiro idade, caracter resposta, caracter categoria, real valorIngresso)
+	real meia;
+	se (idade <= 12)entao /// Somente para usuarios com 12 anos para baixo
+		escreval (" Garantia de meia entrada para criancas! ");
+		meia = valorIngresso/2;
+		retorna meia;
+	senao
+		se (idade >= 13)entao /// A partir dos 13 anos o usuario sera informado se possui os beneficios necessarios para a meia entrada
+			faca
+				escreval(" CATEGORIA DE BENEFICIO DE MEIA ENTRADA SOMENTE PARA: ");
+				escreval(" ESTUDANTES: ");
+				escreval(" PORTADORAS DE NECESSIDADES ESPECIAIS: ");
+				escreval(" IDOSOS: ");
+				escreval(" DOADOR DE SANGUE: ");
+				escreval(" VOCE TEM DIREITO A ALGUM DESSES BENEFICIOS? ");
+				escreval(" (S) - SIM ");
+				escreval(" (N) - NAO ");
+				leiaCaracter (resposta);
+				resposta = maiusculoCaracter(resposta);
+				limpaTela();
+				se (resposta == 'S')entao
+					escreval(" MENU DE OPCOES ");
+					escreval(" (E)- ESTUDANTES: ");
+					escreval(" (P)- PORTADORAS DE NECESSIDADES ESPECIAIS: ");
+					escreval(" (I)- IDOSOS: ");
+					escreval(" (D)- DOADOR DE SANGUE: ");
+					leiaCaracter (categoria);
+					categoria = maiusculoCaracter(categoria);
+					escolha (categoria)
+					caso 'E'
+						limpaTela();
+						escreval (" Resumo. ");
+						escreval (" Categoria do comprador: Estudante. ");
+						interrompa;
+					caso 'P'
+						limpaTela();
+						escreval (" Resumo. ");
+						escreval (" Categoria do comprador: Portador de Necessidades Especiais. ");
+						interrompa;
+					caso 'I'
+						limpaTela();
+						escreval (" Resumo. ");
+						escreval (" Categoria do comprador: Idoso. ");
+						interrompa;
+					caso 'D'
+						limpaTela();
+						escreval (" Resumo. ");
+						escreval (" Categoria do comprador: Doador de Sangue. ");
+					fimEscolha
+					meia = valorIngresso/2; // meia entrada
+					retorna meia;
+				fimSe
+				se (resposta != 'S' e resposta != 'N')entao
+					escreval (" Caracter invalido. Tente novamente");
+				fimSe
+			enquanto (resposta != 'S' e resposta != 'N');
+		fimSe
+	fimSe
+	retorna valorIngresso;
+fimFuncao
+/// Validando a quantidade de cadeiras
+funcao inteiro leValidaCadeiras (inteiro cadeiras[], inteiro quantidade)
+	inteiro flag, indice;
+	inteiro cadeira;
+	indice = 0;
+	faca
+		flag = 0;
+		escreval (" Informe o numero da cadeira: ");
+		leia(cadeira);
+		para (indice de 0 ate quantidade-1 passo 1)faca
+			se(cadeira == cadeiras[indice])entao
+				flag = 1;
+				interrompa;
+			fimSe
+		fimPara
+		se (cadeira <= 0)entao
+			escreval (" O numero da cadeira nao pode ser menor que 1. Tente Novamente...");
+		fimSe
+		se (flag == 1)entao
+			escreval (" Essa cadeira ja foi escolhida. Escolha outra por favor!");
+		fimSe
+	enquanto (flag == 1 ou cadeira <= 0);
+	retorna cadeira;
+fimFuncao
+/// Valor final dos ingressos somados
+procedimento calculaIngresso(real calcula)
+	escreval (" Valor total das vendas: R$", calcula);
+fimProcedimento

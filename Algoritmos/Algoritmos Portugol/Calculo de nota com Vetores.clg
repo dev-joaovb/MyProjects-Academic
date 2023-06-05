@@ -1,0 +1,42 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo:  
+//  Entrada :
+//  Saída   :
+
+
+principal
+	texto nome [4];
+	real nota1[4], nota2[4], mediaNota[4];
+	inteiro contador;
+		escreval (" Olá a sua nota final será lançada hoje, por favor informe as notas 1 e nota 2 para a Media Final" );
+	para (contador de 0 ate 3 passo 1) faca
+		escreval (contador, "° Aluno. ");
+		escreval ("Nome: ");
+		leia (nome[contador]);
+		escreval (" Nota 1: ");
+		leia (nota1[contador]);
+		escreval (" Nota 2: ");
+		leia (nota2[contador]);
+			//escreval (nome[contador]," A sua media final foi: ");
+				mediaNota[contador] = (nota1[contador] + nota2 [contador]) / 2;
+	fimPara
+
+	para (contador de 0 ate 3 passo 1) faca
+		escreval (" A media final do aluno ",nome[contador], " foi ", mediaNota[contador]);
+			se (mediaNota[contador] < 7) entao
+				escreval (nome[contador], " Está reprovado, pois a sua média foi a baixo de 7");
+				senao
+					se (mediaNota[contador] > 7) entao
+						escreval (" Parabéns, ", nome[contador]," você está aprovado. ");
+					fimSe
+			fimSe
+	fimPara
+
+
+
+
+
+
+		
+fimPrincipal

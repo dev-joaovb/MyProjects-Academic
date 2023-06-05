@@ -1,0 +1,32 @@
+algoritmo semNome;
+
+principal
+texto time [3];
+inteiro i, j;
+	escreval("-----------------");
+	escreval(" TORNEIO DE FUTEBOL ");
+	escreval("-----------------");
+	para (i de 0 ate 2 passo 1) faca 
+		escreva(i, "°time: ");
+		leia(time[i]); 
+	fimPara
+limpaTela(); 
+		escreval("----------------");
+		escreval("TABELA DO TORNEIO");
+		escreval("----------------");
+	para (i de 0 ate 2 passo 2) faca 
+		para (j de i+1 ate 2 passo 1) faca
+			escreval(time[i]," x ", time[j]);
+		fimPara 
+	fimPara
+		para (i de 1 ate 2 passo 1) faca 
+			para (j de i-1 ate 2 passo 2) faca 
+				escreval(time[i]," x ", time[j]);
+			fimPara
+		fimPara
+				para (i de 2 ate 2 passo 1) faca
+					para (j de i-2 ate 1 passo 2) faca
+						escreval(time[i]," x ", time[j]);
+					fimPara
+				fimPara
+fimPrincipal
