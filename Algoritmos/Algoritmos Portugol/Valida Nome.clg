@@ -1,0 +1,22 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo:  
+//  Entrada :
+//  Saída   :
+
+
+principal
+	// Declarações
+	texto nome;
+	inteiro quantidade;
+	caracter voto;
+	faca
+	escreval (" Informe o nome do entrevistador: ");
+	leia (nome);
+	se (comparaTexto (nome, "") == 0) entao// validando o nome;
+		escreval (" Nome do entrevistador é obrigatório! ");
+		fimSe
+	enquanto (comparaTexto (nome,"") == 0);
+	// Instruções
+
+fimPrincipal

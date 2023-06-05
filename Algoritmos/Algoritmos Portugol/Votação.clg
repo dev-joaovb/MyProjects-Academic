@@ -1,0 +1,98 @@
+algoritmo semNome;
+// Síntese
+//  Objetivo:  
+//  Entrada :
+//  Saída   :
+
+
+principal
+	// Declarações
+	inteiro quantidadePessoas, contador;
+	texto nome;
+	inteiro Ifood, Rappi, UberE;
+	caracter voto;
+Ifood = 0;
+Rappi = 0;
+UberE = 0;
+
+	quantidadePessoas = leValidaParticipantes ();
+limpaTela();
+		escreval (quantidadePessoas, " estão participando. ");
+		escreval (" Informe o nome que irá ser responsável por essa pesquisa: ");
+		leia (nome);
+limpaTela();
+		escreval (" Olá, ", nome, ". Seja Bem Vindo! Esse programa irá analisar quais empresas de entrga de cominda dão mais serventia. ");
+		escreval ("");
+		escreval (" Esses são as empresas participantes: (I) Ifood, (U) Uber Eats e (R) Rappi. ");
+		escreval ("");
+		escreval (" Informe as letras: I, R e U, caso digite outra diferente o voto será anulado! ");
+		escreval (" Faça a votação!");
+		para (contador de 1 ate quantidadePessoas passo 1) faca
+				escreval (contador, "° voto! ");	
+				leiaCaracter (voto);
+				voto = maiusculoCaracter (voto);
+			escolha (voto)
+		caso 'I'
+			Ifood = Ifood + 1;
+			interrompa;
+		caso 'R'
+			Rappi = Rappi + 1;
+			interrompa;
+		caso 'U'
+			UberE = UberE + 1;
+			interrompa;
+		outroCaso
+			escreval (" Voto anulado, pois não existe essa opção!!");
+		fimEscolha
+		fimPara
+limpaTela();
+		escreval (" Resumo da votação! ");
+		escreval (" _____________________________________");
+		escreval (" Ifood recebeu ", Ifood, " votos. ");
+		escreval (" Rappi recebeu ", Rappi, " votos. ");
+		escreval (" Uber Eats recebeu ", UberE, " votos. ");
+		escreval (" ______________________________________" );
+
+	se (Ifood > Rappi e Ifood > UberE) entao
+		escreval (" O Ifood é o favorito do povo, com ", Ifood, " votos de ", quantidadePessoas);
+		senao
+			se (Rappi > Ifood e Rappi > UberE) entao
+				escreval (" O Rappi é o favorito do povo, com ", Rappi, " votos de ", quantidadePessoas);
+				senao
+					se (UberE > Ifood e UberE > Rappi) entao
+						escreval (" O Uber Eats é o favorito do povo, com ", UberE, " votos de ", quantidadePessoas);
+					senao
+					se (UberE == Ifood ) entao
+						escreval (" Uber Eats e Ifood são os favoritos do povo com ",Ifood, " votos cada. ");
+						senao
+						se (UberE == Rappi) entao
+						escreval (" Uber Eats e Rappi são os favoritos do povo com ",Rappi, " votos cada. ");
+					senao
+					se (Rappi == Ifood) entao
+					escreval (" Rappi e Ifood são os favoritos do povo com ",Rappi, " votos cada. ");
+					fimSe
+				fimSe
+			fimSe
+		fimSe
+	fimSe
+fimSe
+
+fimPrincipal
+		
+funcao inteiro leValidaParticipantes ()
+	inteiro participantes;
+		escreval (" Informe a quantidade de participantes: ");
+		leia (participantes);
+	enquanto (participantes < 3 ou participantes > 70) faca
+		se ( participantes < 3) entao
+		escreval (" Essa operação não pôde continuar devido a quantidade estabelecida ter sido menor que o mínimo (3). Tente novamente....");
+		leia (participantes);
+		senao
+			se (participantes > 70) entao
+			escreval (" Essa operação não pôde continuar devido a quantidade estabelecida ter sido maior que o máximo (70). Tente novamente....");
+			leia (participantes);
+			fimSe
+		fimSe
+	fimEnquanto
+	retorna participantes;
+fimFuncao
