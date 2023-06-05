@@ -1,0 +1,16 @@
+SWAP nome dado ao projeto com intuito de ajudar as pessoas com problemas de saúde mental.
+
+O objetivo principal além de oferecer ajuda e tratamento, é também compartilhar relatos positivos das pessoas que se tratatam desse problema que é bem alto na sociedade.
+
+Para que isso seja possível, o sistema oferece um espaço para profissionais que conhecem do assunto e queira compartilhar passos de tratamento da saúde mental, pessoas que já passaram por esse tipo de problema e principalmente as pessoas que estão tendo esse problema e tem medo de buscar ajuda.
+
+Com o compartilhamento dessas informações, as pessoas podem ter uma motivação positiva para o tratamento desses problemas, sendo assim, o software oferece um espaço para cadastro de dados de um profissional da área, ele poderá compartilhar seu currículo e também a sua clínica (caso tenha uma) no caso do paciente se interessar em conhece-lo e se tratar pessoalmemte com o profissional, também é oferecido um espaço para as pessoas com os sintomas de algum problema mental e das pessoas que se interessarem em compartilhar o caminho para o livramento dessas doenças.
+
+funcionalidades:
+
+Cadastrar/Login Profissional/Paciente
+
+Informar dados do paciente e qual os sintomas, o programa irá ajudar a identificar o tipo de problema com ajuda profissional.
+
+Após estar logado, o paciente poderá escolher o  tipo de consulta baseado nos seus sintomas, mas essa opção é garantido para aqueles pacientes que já sabe o tipo de problema que irá tratar, os que ainda não sabem, basta informar os sintomas que o sistema irá ajudar a identifica, lembrando que será consultado e analisado por profissionais e depois mandar um diagnóstico pelo email.
+

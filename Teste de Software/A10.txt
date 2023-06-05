@@ -1,0 +1,111 @@
+O que é Teste automatizado?
+
+O teste automatizado é a aplicação de ferramentas de software para automatizar um processo manual conduzido por humanos de revisão e validação de um produto de software. A maioria dos projetos de software ágeis e de DevOps modernos agora inclui testes automatizados desde o início. Para apreciar de verdade o valor dos testes automatizados, no entanto, é bom entender como era a vida antes da adoção ampla do método.
+
+Quando o teste manual era a norma, era comum as empresas de software empregarem uma equipe de garantia de qualidade em tempo integral. Essa equipe desenvolvia uma coleção de “planos de teste” ou checklists passo a passo para confirmar que uma característica de um projeto de software se comportava como esperado. A equipe de garantia de qualidade executava manualmente essas checklists sempre que uma nova atualização ou alteração era enviada para o projeto de software e, em seguida, retornava os resultados dos planos de teste para a equipe de engenharia para revisão e qualquer desenvolvimento adicional para resolver problemas.
+
+Esse processo era lento, caro e propenso a erros. O teste automatizado traz enormes ganhos para a eficiência da equipe e o ROI das equipes de garantia de qualidade.
+
+O teste automatizado coloca as responsabilidades de propriedade nas mãos da equipe de engenharia. Os planos de teste são desenvolvidos junto com o desenvolvimento regular de recursos de roteiro e, em seguida, executados automaticamente por ferramentas de integração contínua de software. O teste automatizado promove o tamanho enxuto da equipe de garantia de qualidade e permite que ela se concentre em recursos mais sensíveis.
+
+
+Indicação de ferramentas de automação por nível de teste
+
+1- Selenium: No momento, Selenium é a ferramenta mais popular e usada do mercado. Esta ferramenta open source é usada principalmente para aplicações web. A estrutura de testes do Selenium atua em vários browsers e plataformas como Linux, Mac, Windows, Firefox, Chrome, Internet Explorer, assim como em Headless Browsers.
+
+2- TestComplete: Desenvolvido pela SmartBear Software, o TestComplete é uma plataforma comercial que pode automatizar testes do desktop, celular e aplicações web. Permite também a utilização de diversas linguagens, como JavaScript, VBScript e Python, além também de ter as funções de teste orientado por dados (DDT), teste por palavras-chaves, teste de regressão e teste distribuído.
+
+O TestComplete possibilita a criação de testes automatizados para aplicativos iOS, Web Microsoft Windows e Android. A ferramenta comporta as seguintes funções:
+
+* Testes de GUI
+* Suporta JavaScript, Python, VBScript, JScript, DelphiScript, C++Script e C#Script
+* Visualizador de testes
+* Testes com scripts
+* Gravação e reprodução de testes
+
+3- Telerik Test Studio: Telerik Test Studio é uma ferramenta de automação abrangente. O TestStudio pode ser usado manualmente e também oferece teste funcional de UI, teste de performance, teste exploratório, teste mobile, teste de carregamento e teste no Visual Studio. São compatíveis no Test Studio aplicativos de automação como Angular, ASP.NET, HTML5, JavaScript, AJAX, WPF, Silverlight, MVC, Ruby e iOS, PHP e Android. Também suporta linguagens de script como VB.Net e C#.
+
+Algumas outras funções principais de Telerik Test Studio são:
+
+* Gravar e reproduzir
+* Integração com Visual Basic Studio 2010 e 2012
+* Testes cross-browser
+* Integração com ferramentas de depuração
+* Testes manuais
+
+4- Robotium: Este framework é popular para a automação de testes para Android. Benefícios do Robotium:
+
+* Compatível com aplicações nativas e híbridas.
+* Facilita a escrita da automação de testes de caixa preta.
+* Boa compatibilidade com Gradle, Ant e Maven
+* API simples, todos os outros métodos estão disponíveis em solo class
+* Delays e timings automáticos
+* Não é necessário escrever códigos ao navegar de uma atividade para outra
+* Os casos de teste são robustos, já que o tempo de processamento está vinculado aos componentes da UI.
+
+5- Watir: Watir é o aplicativo de testes no Ruby, uma ferramenta open source muitíssimo leve, usada especialmente para testes de aplicações web. Gigantes da tecnologia como Oracle, SAP e Facebook a usam. Ela oferece as seguintes funções:
+
+* Testa qualquer navegador e aplicação web, independente da linguagem.
+* Testes cross-browser
+* Compatível com outras ferramentas como Cucumber, RSpec e Test/Unit
+* Testa os botões, links, forms e tempo de resposta de páginas web.
+
+6- HPE Unified Functional Testing: O QuickTest Professional (QTP) da companhia Hewlett-Packard (HP) é agora conhecido como Unified Functional Testing (UFT), uma das ferramentas de automação de testes cross-platform de ponta, que proporciona teste funcional automatizado e teste de regressão. Faz uso de VBscripts para especificar procedimentos de testes.
+
+Algumas das características exclusivas do HP UTP são:
+
+* Pode automatizar testes em Web, PowerBuilder, Desktop, ActiveX, SAP, Delphi, Net, Flex, Java, Oracle, Siebel, Mobile, PeopleSoft, Stingray, Visual Basic, etc.
+* Usa VBScript como linguagem de script
+* Oferece uso simplificado para GUI
+* Altamente integrado com a HP ALM (ferramenta de gerenciamento de testes) e HP LoadRunner (ferramenta de teste de performance)
+* Integração com Mercury Business Process Testing e Mercury Quality Center
+* Exclusivo reconhecedor inteligente de objetos (Smart Object Recognition)
+* Mecanismo de tratamento de erros
+* Criação de parâmetros para objetos, pontos de verificação e tabelas de dados
+* Documentação automatizada
+
+7- Ranorex: Ranorex é uma ferramenta de teste de GUI bastante ajustável de se executar e automatizar testes. Também oferece diversas ferramentas de automatização de testes para aplicações web, desktop e mobile. Diferentemente do Selenium, o Ranorex é de fácil instalação e uso para não-programadores. A Ranorex oferece as seguintes funções especiais:
+
+* Reconhecedor de GUI
+* Código de testes reutilizáveis
+* Integração com diversas ferramentas
+* Permite gravar e reproduzir
+* Robusto identificador de objetos
+* Uso de expressões Xpath
+* Edição Xpath “Click & Go”
+* Editor de mapa de objetos de interface
+* Sincronização automática de objetos da UI
+
+8- Cucumber: Programado no Ruby, o Cucumber é uma ferramenta de testes open source desenvolvido com o conceito desenvolvimento orientado por comportamento (BDD). Este conceito é usado para escrever testes de aceitação para aplicações web. Anteriormente, era restrito apenas ao Ruby, mas atualmente suporta outras linguagens como Java, NET, Scala, Groovy, etc. Funcionalidades:
+
+* Usado para performar testes automáticos de aceitação
+* Fornece documentos únicos, que inclui especificações e testes
+* Também suporta múltiplos sistemas operacionais.
+* O código do Cucumber pode ser executado em diferentes frameworks como Selenium, Ruby, etc
+
+9- Visual Studio Test Professional: Uma solução para testes totalmente instrumentada, configurável e intuitiva para todas as plataformas da Microsoft, incluindo mobile, tablets, desktops, servers e a nuvem.  O VST tem como benefícios:
+
+* Com uma assinatura de MSDN você pode acessar outros produtos e serviços da Microsoft
+* Exploratory browser based testing
+* É uma ferramenta licenciada útil para streamlining quality e continuous delivery
+* Também disponibiliza a opção free trial
+* Conduz, grava e repete testes manuais
+
+10- TestingWhiz: Programado pela Cygnet Infotech, a TestingWhiz é uma ferramenta de automação de testes que oferece soluções para testes em website, teste de regressão, teste mobile, teste cross-browser e teste do banco de dados. A TestingWhiz oferece várias funcionalidades importantes como:
+
+Arquitetura sem código
+Suporta bem integração contínua
+Testes guiados por palavra chave, dados ou distribuído
+Grava e reproduz estruturas de testes automatizados
+Object Eye Internal Recorder
+Mais de 209 comandos de teste integrados agregados ao JavaScript
+Integração com ferramentas de tracking de bugs como Jira, Mantis e Fogbugz
+Integração com ferramentas de gerenciamento de testes como HP Quality Center
+Testes baseados em risco
+Integração e entrega contínua para ciclos ágeis
+
+
+A selenium é primeira e única ferramenta de automação que utilizei até o momento, pois ela é uma ferramenta gratuita e online de fácil acesso.
+
+
+Referencias: DevMedia, PrimeControl

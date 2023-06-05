@@ -1,0 +1,56 @@
+Anexo A Métricas
+
+Métricas de software
+
+Atributos externos e internos
+
+Um atributo interno pode influenciar uma ou mais características e uma característica pode ser influenciada por mais de um atributo. Neste modelo, todos os atributos de qualidade do produto de software são classificados numa estrutura hierárquica, em árvore, de características e subcaracterísticas. 
+
+A correlação entre atributos internos e medidas externas nunca é perfeita e o efeito que um dado atributo interno tem sobre uma medida externa associada será determinada pela experiência e dependerá do contexto específico no qual o software
+será usado.
+
+Do mesmo modo, propriedades externas influenciarão a qualidade observada. Uma falha na qualidade em uso pode ser relacionada a atributos de qualidade externa e a atributos internos associados que precisem ser modificados.
+
+Métricas externas oferecem a usuários, avaliadores, executores de teste e desenvolvedores os benefícios de poderem avaliar a qualidade do produto de software durante seu teste ou operação.
+
+Relacionamento entre métricas internas e externas
+
+As métricas externas apropriadas e os limites aceitáveis são especificados para quantificar os critérios de qualidade que validam se o software atende às necessidades do usuário. Os atributos de qualidade interna do software são então definidos e especificados, com o objetivo de atingir a qualidade externa e a qualidade em uso requeridas e contemplá-las no produto durante seu desenvolvimento.
+
+Anexo B
+Definições de outras normas (Complemento do item 4)
+
+- desenvolvedorr: Organização que executa atividades de desenvolvimento (incluindo análise de requisitos, projeto, testes até a aceitação) durante o processo de ciclo de vida de software.
+
+- módulo de avaliação: Pacote de tecnologia de avaliação para uma característica ou subcaracterística de qualidade de software específica.
+
+- qualidade externa: O quanto um produto satisfaz necessidades explícitas e implícitas quando utilizado em condições especificadas.
+
+- falha: Término da capacidade de um produto de executar uma função requerida ou a sua incapacidade de executá-la dentro de limites previamente especificados.
+
+- defeito: Passo, processo ou definição de dados incorretos em um programa de computador.
+
+- qualidade interna: Totalidade dos atributos de um produto que determinam sua capacidade para satisfazer necessidades explícitas e implícitas quando utilizado em condições especificadas.
+
+- qualidade: Totalidade de características de uma entidade que lhe confere a capacidade de satisfazer as necessidades explícitas e implícitas.
+
+- avaliação de qualidade: Exame sistemático do quanto uma entidade é capaz de atender aos requisitos especificados.
+
+- pontuação: Ação de mapear o valor medido em comparação ao nível de pontuação apropriado. Utiliza-se para determinar o nível de pontuação do software para uma característica de qualidade específica.
+
+Anexo C Histórico do Trabalho
+
+Retrospectiva
+
+A indústria de software está entrando em um período de relativa maturidade e, ao mesmo tempo, o software está se tornando um componente decisivo para muitos produtos de nossos dias. Esse aspecto do software o torna um dos principais novos fatores de negócios. Além disso, com a nova demanda global por segurança e qualidade, torna-se importante a necessidade de acordos internacionais sobre procedimentos para julgamento de qualidade de software.
+
+Para avaliar-se a qualidade de um produto por algum método quantitativo, é necessário um conjunto de características de qualidade que descreva o produto e forme a base para a avaliação. Esta parte da NBR ISO/IEC 9126 define essas características de qualidade para produtos de software.
+
+Seis características de qualidade de software
+
+Os requisitos para a escolha das características descritas nesta Norma foram os seguintes:
+- Cobrir conjuntamente todos os aspectos de qualidade de software resultantes da definição de qualidade da ISO.
+- Descrever a qualidade do produto com um mínimo de sobreposição.
+- Ficar o mais próximo possível da terminologia estabelecida.
+- Formar um conjunto de não mais de seis a oito características, por questões de clareza e manuseio.
+- Identificar áreas de atributos de produtos de software para posterior refinamento.

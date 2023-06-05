@@ -1,0 +1,21 @@
+ Os requisitos são bases para todo projeto no sistema, definindo o que as funções mais interessadas mais são necessárias. Esses requisitos são expressos em uma linguagem natural para que todos possam ter o entendimento. Os requisitos além de previnirem certos problemas no sistema, é certo definir os riscos e prover soluções satisfatórias casos esses riscos venham a falhar.
+Esses requistos seriam:
+- Planejamento do projeto;
+
+- Gerenciamento de riscos;
+
+- Testes de aceitação;
+
+- Controle de mudanças;
+
+ Engenharia de Requisitos é um processo onde os requisitos de um produto de software são coletados, analisados, documentados e gerenciados durante todo o ciclo de vida de um software.
+
+ Levantamento de Requisitos, sua fase inicial do processo de engenharia de requisitos, essa atividade leva em conta a necessidade dos usuários, informações de domínio, sistemas já existentes na organização.
+
+ Análise de Requisitos, essa atividade vem logo em seguida onde se trata da função  de usar os requisitos levantados como base para a modelagem do sistema. Essa Atividade busca duas perspequitivas onde a primeira delas é a estrutural que busca modelar os conceitos e relações de domínio que são bastante relevantes para o sistema em desenvolvimento. A segunda é a comportamental onde é modelar o comportamento total do sistema sendo de uma ou mais funcionalidades.
+
+ Documentação de requisitos, essa atividade consiste nos requisitos e modelos coletados nas etapas de Levantamento e Análise de Requisitos onde são descritos e apresentados em documentos, que são uma atividade de registro e oficialização dos resultados de engenharia de requisitos
+
+ Verificação, Validação e Garantia da Qualidade de Requisitos, essa fase deve ser iniciada o mais breve possível no processo de desenvolvimento de software. Os Requisitos são a base para o desenvolvimento, dessa forma é fundamental que eles sejam cuidadosamente avaliados, A diferença entre avaliação e Validação é que verificação assegura que o sistema esteja sendo constrído de forma segura. Já a verificação assegura que os artefatos produzidos atendem aos requisitos.
+
+ Gerência de Requisitos, onde ocorrem mudanças durante todo o processo de software, essa atividade serve para descobrir os erros das mudanças a partir do levantamento de requisitos até a operação do sistema em produção. A descoberta de erros, omissões, conflitos, inconsistência nos requisitos e melhor entendimento dos usuários sobre as suas necessidades. O gereniamento de requisitos diminui os problemas causados por essas mudanças na parte do levantamento de requisitos até a operação do sistema de produção.

@@ -1,0 +1,29 @@
+1) B) Descobrir a origem de um problema
+
+2) C) Verificar / Checar
+
+3) B) SCOR
+
+4) D) A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.
+
+5) C) Desenvolvimento de Requisitos – DRE
+
+6) B) Medir
+
+7) A) Disponibilidade
+
+8) C) Analisar
+
+9) C) Entrada Externa, Consulta Externa, Saída Externa, Arquivo Lógico Interno e Arquivo de Interface Externa.
+
+10) C) R$ 18.900,00
+
+11) E) Modelo de Melhoria de Processos (CMMI).
+
+12) D) nível 4
+
+13) Ao MPS-BR que é um programa com objetivo de melhorar a capacidade de desenvolvimento de software, serviços e as práticas de gestão RH
+
+14) Ela é uma ferramenta de qualidade que tem 4 fases (Plan, Do, Check e Act), sendo utilizada para a solução de problemas, controle e melhoria contínua de processos e produtos, sendo assim, quando se fala de melhoria contínua, significa que o desenvolvedor não quer somento algo simples e objetivo e sim focando no melhor para aquele produto, tendo uma qualidade acima das expectativas.
+
+15) Verificação de processos específicos, desde as principais atividades envolvidas até suas influências internas e externas sobre o negócio.

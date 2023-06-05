@@ -1,0 +1,38 @@
+ O processo de Software
+	
+	Um processo pode ser definido como várias atividades e muitos resultados associados em que produz um produto de software, sendo assim pode ser considerado de forma geral um processo de software padrão em que é visto como um conjunto de atividades, métodos, ferramentas e vários métodos que podem ser utilizados como um produto de software.
+	As fases mais importantes utilizadas em um processo de software são:
+Especificações de Requisitos: onde trabalha o requisito operacional para uma descrição da função a ser executada.
+
+Projeto de Sistema: É onde fica a descrição de todos os componentes importantes para a codificação de um sistema.
+
+Programação ou Codificação: Criação dos códigos em que controla o sistema e realiza a computação e lógica envolvida.
+
+Verificação e Integração: É a verificação da satisfação dos requisitos iniciais pelo produto produzido.
+	Tendo em vista que as fases de um processo de software tem sua importância, dentro de cada fase existem atividades básicas para que sejam atingidos os objetos compostos, sendo assim essas atividades são:
+
+	Especificação:
+1) Engenharia de Sistema: Atividade realizada em especificações, ela estabelece a solução para o problema, envolvendo questões extra software;
+
+2) Análise de Requisitos: Ainda em Especificações, a análise de requisitos faz o levantamento das necessidades de um sistema a serem implementados. Seu principal objetivo é produzir uma especificação de requisitos, onde é um documento;
+
+3)Especificação de Sistema: E por fim essa atividade realiza a descrição funcional do sistema. Podendo incluir um plano de testes para a verificação do sistema se está adequado.
+
+	Projeto:
+1) Projeto Arquitetural: Essa atividade é realizada na fase de Projetos, onde sua função é o desenvolvimento de um modelo conceitual para o sistema, composto de módulos independentes;
+
+2) Projeto de Interface: Essa atividade também realizada em fase de Projetos faz com que cada módulo tenha sua interfface de comunicação estudada e definida;
+
+3) Projeto detalhado: Ultima atividade realizada na fase de projetos, onde os módulos em si são definidos, e possivelmente traduzidos para pseudocódigo.
+
+	Implementação:
+1) Codificação: Em implementações, a atividade de codificação é realizada para que a implementação em si do sistema em uma linguagem de computador.
+
+	Validação:
+1) Teste de Unidade e Módulo: Essa atividade é realizada na fase de Validação, que por sua vez realiza testes para verificar a presença de erros e comportamento adequado a nível das funções e módulos básicos do sistema;
+
+2) Integração: Também em Validações, essa atividade consistem em ter uma reunião dos diferetes módulos em um produto de software homogêneo, e a verificação da interação entre estes quando operando em conjunto.
+
+	Manutenção e Evolução:
+1) Essa fase consistem em que o software en geral entra em um ciclo iterativo que abrange todas as fases anteriores.
+

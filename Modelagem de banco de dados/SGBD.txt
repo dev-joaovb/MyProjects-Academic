@@ -1,0 +1,38 @@
+Principais caracteristicas da abordagem de um banco de dados em relação ao processamento de arquivos:
+
+- Autodescrição do sistema de banco de dados;
+- Isolamento entre programas e os dadoss, e a abstração dos dados;
+- Suporte para várias visões dos dados;
+- Compartilhamento de dados e processamento de transações de mutiusuários.
+
+Natureza autodescritiva do sistema de  banco de dados:
+
+- Definição ou descrição completa da estrutura do banco de dados e suas restrições;
+
+- No catálogo do SGBD, contém as definições armazenadas;
+
+- As informações contidas como estruturas em cada arquivo, tipos de formato e armazenamento de cada item de dado e várias restrições. É chamado de metadados, as informações armazenadas no catálogo que descreve a estrutura de um banco de dados.
+
+Suporte para várias visões dos dodaos:
+
+- Um banco de dados típico tem muitos usuários, sendo que cada um pode solicitar diferentes perspectivas ou visões. Uma visão pode ser um subconjunto de um banco de dados ou conter uma visão virtual dos dados, derivados dos arquivos.
+
+Compartilhamento de dados e processamento de transações de multiusuários:
+
+- Um SGBD multiusuário deve permitir que diversos usuários acessem o banco de dados ao mesmo tempo;
+
+- O SGBD deve incluir um software de controle de concorrência para garantir que muitos usuários, ao tentar atualizar o mesmo lado, o  façam de um modo controlado, para assegurar que os resultados das atualizações sejam corretos.
+
+- Uma transação é um programa em execução ou processo que inclui um ou mais acessos, como leitura ou a atualização
+
+Administradores de Banco de dados:
+
+- DBA é o responsável pela autorização para o acesso ao banco, pela coordenação e monitoração de seu uso e por adquirir recursos de software e hardware conforme o necessário.
+
+Projetistas do Banco de dados:
+
+- São responsáveis pela identificação dos dados que serão armazenamento no banco e também por escolher as estruturas apropriadas para representar e armazenar esses dados;
+
+Garantindo Backup e restauração:
+
+- Um SGBD deve prover facilidades para a restauração de falhas de hardware ou de software.
